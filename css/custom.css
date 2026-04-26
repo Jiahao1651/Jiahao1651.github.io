@@ -1,0 +1,40 @@
+/* =========================
+   正文排版优化（排除首页 & 友链）
+   ========================= */
+
+/* 所有常见内容页面 */
+.post .post-content,
+.page:not(.page-links) .post-content,
+.archive .post-content,
+.category .post-content,
+.tag .post-content,
+.search .post-content {
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+
+/* 只优化段落和列表（更安全） */
+.post .post-content p,
+.post .post-content li,
+.page:not(.page-links) .post-content p,
+.page:not(.page-links) .post-content li,
+.archive .post-content p,
+.archive .post-content li,
+.category .post-content p,
+.category .post-content li,
+.tag .post-content p,
+.tag .post-content li {
+  font-size: 18px;
+}
+
+/* 可选：代码块保持小一点 */
+.post .post-content code,
+.page .post-content code {
+  font-size: 15px;
+}
+
+.home #subtitle {
+  font-size: 14px;   /* 改成你想要的大小 */
+  line-height: 1.6;
+}
